@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!--HEADER-->
+    <div class="flex flex-wrap lg:flex-nowrap w-full  lg:justify-between bg-indigo-500 p-2 md:px-6 text-indigo-100 items-center">
+        
+        <!--MENU MOBILE-->
+        <div class="w-1/3 lg:hidden">
+            <svg class="w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+        </div>
+
+        <!-- LOGOS -->
+        <div class="lg:w-auto w-1/3 m-0 flex-shrink-0 self-center flex justify-center">
+
+
+            <!-- MOBIL -->
+            <img class="md:hidden w-12" src="https://shop.mynikken.com/v2/images/nikken-mobile.png" >
+
+            <!-- DESKTOP -->
+            <img src="https://shop.mynikken.com/v2/images/nikken-logo-white.png" class="hidden md:block h-12 w-auto">
+        </div>
+
+
+        <!-- BOTON CATEGORIAS -->
+        <div  class="hidden lg:flex items-center">
+            <button class="text-indigo-100 font-medium py-2 px-4 mx-4 focus:outline-none">Products</button>
+        </div>
+
+
+        <!-- SEARCH BAR -->
+        <div class=" order-1 lg:order-none w-full lg:mx-2 lg:my-0 mb-2 mt-2">
+            <div class="flex bg-indigo-100 p-2 w-full rounded-md">
+
+                <svg  class="w-6 text-indigo-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+                <input class="bg-indigo-100 w-full px-2 text-indigo-900 focus:outline-none" placeholder="Buscar...">
+            </div>
+        </div> 
+
+
+        <!-- OPCIONES IDIOMA LENGUAJE Y CARRITO -->
+        <div  class="lg:w-auto w-1/3 flex items-center justify-end">
+
+            <!-- PAIS -->
+            <div>
+
+                <!-- MOVIL -->
+                <svg id="mobile-country" class="w-8 md:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                  </svg>
+
+                  <!-- DESKTOP -->
+                  <button id="desktop-country" class=" focus:outline-none hidden md:flex items-center font-bold py-2 px-6 border border-indigo-200 rounded-md mx-1">USA
+                      <svg class="w-4 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg></button>
+            </div>
+
+
+            <!-- IDIOMA -->
+            <div>
+
+                <!-- MOVIL -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 mx-2 md:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+                  </svg>
+
+                  <!-- DESKTOP -->
+                  <button id="desktop-country" class=" focus:outline-none hidden md:flex items-center font-bold py-2 px-6 border border-indigo-200 rounded-md mx-1">EN  <svg class="w-4 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg></button>
+           </div>
+
+           <!-- BOTON DEL CARRITO  -->
+            <div>
+                <svg class="w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+            </div>
+        </div>
+
+        <!-- MENU DE USUARIO DESKTOP -->
+        <div id="User-Opt" class="lg:block hidden ml-4">
+            <button class="flex items-center rounded-md py-2 focus:outline-none hover:bg-indigo-400">
+                <svg class="w-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                <div class="w-36 mx-2">
+                    <h4 class="text-white font-medium leading-none">Nombre de Usuario</h4>
+                    <h4 class="font-medium">Menu Options </h4> 
+                </div>
+                <svg class="w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+            </button>
+        </div>
+    </div>
+</body>
+</html>
